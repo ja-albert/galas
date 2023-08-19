@@ -3,9 +3,9 @@
 from datetime import datetime, tzinfo
 from typing import cast
 
-from dateutil.tz import gettz, UTC
-from freezegun import freeze_time
 import pytest
+from dateutil.tz import UTC, gettz
+from freezegun import freeze_time
 
 from galas.__main__ import (
     get_datetime_in_timezone,

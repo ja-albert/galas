@@ -1,0 +1,8 @@
+ruff configuration
+pre-commit
+github actions
+gitea actions
+utils module
+mypy errors fix
+ruff errors fix
+test coverage - async?
