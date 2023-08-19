@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "galas"
+version = "0.1.0"
+description = ""
+authors = ["Jakob Albert <jakob.j.albert@fau.de>"]
+readme = "README.md"
+packages = [{include = "galas", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+discord-py = "^2.3.2"
+python-dotenv = "^1.0.0"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.scripts]
+galas = "galas.__main__:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+freezegun = "^1.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
